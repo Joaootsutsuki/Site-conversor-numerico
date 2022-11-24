@@ -1,10 +1,8 @@
-var x = '35'
-var y = '5.1'
-var z = '50'
-
+const title = document.querySelector(".title");
+const footer = document.querySelector(".footer");
+const body = document.querySelector("body");
 document.documentElement.style.overflow = 'hidden';
 document.body.scroll = "no";
-
 
 const numDecimal = document.querySelector("#decimal");
 const numBinario = document.querySelector("#binario");
@@ -80,7 +78,7 @@ numHexadecimal.addEventListener("keyup", function (evento) {
 
 
 function mudarFundo(){
-    const fundo = document.getElementById('particles-js')
+    
     const body = document.querySelector("body")
     const buttonChecked = document.querySelector('input[name="contraste"]:checked').value;
      
@@ -103,11 +101,6 @@ function mudarFundo(){
         
     }
 }
-
-
-const title = document.querySelector(".title");
-const footer = document.querySelector(".footer");
-const body = document.querySelector("body");
 
 function getValues(){
   return {
@@ -148,18 +141,18 @@ function increaseValues(){
   separatedValuesArray.forEach(element => {
     if(Number.isInteger(element)){
 
-      if(element + 2 < 100){
+      if(element + 2 < 70){
         increasedValues.push(element += 2);
       }else{
-        increasedValues.push(element = 98)
+        increasedValues.push(element = 68)
       }
 
     }else{
 
-      if(element + 0.2 < 10){
+      if(element + 0.2 < 7){
         increasedCenterValues.push(element += 0.2);;
       }else{
-        increasedCenterValues.push(element = 9.8)
+        increasedCenterValues.push(element = 6.8)
       }
     }
   });
@@ -198,6 +191,4 @@ function addNewValues(numbers, centerNumbers){
   const newFooter = `clamp(${numbers[2]}px, ${centerNumbers[1]}vw, ${numbers[3]}px)`;
   body.style.setProperty("--fontsize-title", newTitle);
   body.style.setProperty("--fontsize-footer", newFooter);
-  console.log(numbers)
-  console.log(centerNumbers)
 }
