@@ -144,15 +144,15 @@ function increaseValues(){
       if(element + 2 < 70){
         increasedValues.push(element += 2);
       }else{
-        increasedValues.push(element = 68)
+        increasedValues.push(element = 68);
       }
 
     }else{
 
       if(element + 0.2 < 7){
-        increasedCenterValues.push(element += 0.2);;
+        increasedCenterValues.push(element += 0.2);
       }else{
-        increasedCenterValues.push(element = 6.8)
+        increasedCenterValues.push(element = 6.8);
       }
     }
   });
@@ -170,15 +170,15 @@ function decreaseValues(){
       if(element - 2 > 14){
         decreasedValues.push(element -= 2);
       }else{
-        decreasedValues.push(element = 15)
+        decreasedValues.push(element = 15);
       }
 
     }else{
 
       if(element - 0.2 > 0.2){
-        decreasedCenterValues.push(element -= 0.2);;
+        decreasedCenterValues.push(element -= 0.2);
       }else{
-        decreasedCenterValues.push(element = 0.2)
+        decreasedCenterValues.push(element = 0.2);
       }
     }
   });
